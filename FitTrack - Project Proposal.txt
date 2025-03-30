@@ -1,0 +1,80 @@
+# FitTrack - Project Proposal
+
+## Description
+FitTrack is a sleek and easy-to-use fitness tracking web application designed to help users monitor their workouts, set fitness goals, and visualize progress. The app will focus on simplicity, an eye-catching UI, and an intuitive user experience.
+
+## Tech Stack
+- **Frontend**: React (with Tailwind CSS for styling)
+- **Backend**: Node.js with Express.js
+- **Database**: MongoDB (for storing user data)
+- **Authentication**: Firebase Auth
+- **Hosting**: Vercel (Frontend) and Render (Backend)
+
+## Focus
+This will be a **full-stack** application with equal emphasis on both the frontend UI and backend functionality.
+
+## Type
+FitTrack will be a **web application**, optimized for both desktop and mobile browsers.
+
+## Goal
+The primary goal of FitTrack is to provide users with a visually appealing and straightforward way to:
+- Log daily workouts (e.g., exercise type, duration, intensity)
+- Set fitness goals and track progress
+- View workout history with graphical insights
+- Stay motivated through streaks and achievements
+
+## Target Users
+FitTrack is designed for:
+- **Beginners** looking to establish a workout routine
+- **Casual fitness enthusiasts** who want an easy way to track workouts
+- **Busy professionals** who need a simple, no-fuss fitness log
+
+## Data Plan
+- **User Data**: User profiles, preferences, and workout logs will be stored in MongoDB.
+- **Workout Data**: Users can manually log workouts, and the system will track duration, type, and calories burned.
+- **Goal Tracking**: Users can set and update fitness goals, with a dashboard displaying their progress.
+- **API Usage**: A third-party fitness API may be used for exercise recommendations.
+
+## Project Approach
+### Database Schema (Tentative)
+- **Users Collection**: `id, name, email, password (hashed), profile details`
+- **Workouts Collection**: `id, user_id, exercise_name, duration, calories, date`
+- **Goals Collection**: `id, user_id, goal_type, target, current_progress, status`
+
+### Potential Issues
+- **Data Management**: Ensuring real-time updates and secure user authentication.
+- **UI Optimization**: Creating a responsive and engaging UI without slowing performance.
+- **API Integration**: Managing third-party API calls efficiently.
+
+## Core Features
+✔ User Authentication (Signup/Login with Firebase)  
+✔ Workout Logging (Manually add workouts)  
+✔ Goal Tracking (Set and monitor fitness goals)  
+✔ Visual Insights (Graphs for progress tracking)  
+✔ Motivational Features (Streaks, badges, reminders)  
+
+## User Flow
+1. **Signup/Login** → Secure authentication via Firebase
+2. **Dashboard** → Overview of progress, goals, and workout history
+3. **Log a Workout** → User inputs exercise details
+4. **View Progress** → Graphs and achievements displayed
+5. **Set Goals** → Create and track fitness goals
+6. **Reminders & Streaks** → Motivation for consistency
+
+## Beyond CRUD: What Makes FitTrack Unique?
+- **Animated progress tracking for a dynamic experience**
+- **Daily motivational pop-ups and badges to engage users**
+- **Minimalistic and modern UI with smooth transitions**
+- **Mobile-friendly design for on-the-go access**
+
+## Stretch Goals
+- AI-based workout suggestions based on user habits
+- Integration with smartwatches for automated tracking
+- Social features (friends, challenges, leaderboard)
+
+## GitHub Repository
+A new repository will be created for this project. All code and documentation will be stored there.
+
+---
+This proposal outlines a structured plan for FitTrack. If approved, the next step will be to begin development, ensuring it stays lightweight, visually appealing, and user-friendly! 🚀
+
